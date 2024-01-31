@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* 테두리 변수선언 */
+aside {
+  border-right: 1px solid #DBDBDB;
+}
+aside p {
+  font-size: 18px;
+  margin: 0%;
+}
+
+.menu {
+  width: 100%;
+  padding: 0%;
+  margin-top: 20px;
+}
+.menu li {
+  height: 45px;
+  width: 100%;
+  padding-top: 8px;
+  list-style-type: none;
+  box-sizing: border-box;
+  position: relative;
+}
+.menu li:hover {
+  background-color: #E8F0FE;
+}
+.menu li:hover p, .menu li:hover i {
+  color: #256ED5;
+}
+
+.icon-text .text {
+  float: left;
+}
+.icon-text .icon {
+  float: left;
+  padding-top: 2px;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+.icon-text .icon i {
+  font-size: 125%;
+  width: 29px;
+  height: 24px;
+}
+
+.select-menu {
+  background-color: #E8F0FE;
+}
+.select-menu p, .select-menu i {
+  color: #256ED5;
+}/*# sourceMappingURL=aside.css.map */

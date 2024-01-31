@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>상담시스템</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/ap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel="stylesheet" href="fontAwesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <!-- 헤더 -->
+        <header>
+            <div class="header-container">
+                <div class="logo-box"><img src="img/logo.png"></div>
+                <div class="btn-box">
+                    <button class=""><p><i class="fa-solid fa-mug-saucer"></i>이석</p></button>
+                    <button class=""><p><i class="fa-solid fa-phone"></i>걸기</p></button>
+                    <button class=""><p><i class="fa-solid fa-phone"></i>끊기</p></button>
+                    <button class=""><p><i class="fa-solid fa-phone"></i>대기</p></button>
+                    <button class=""><p><i class="fa-solid fa-user-group"></i>2자</p></button>
+                    <button class=""><p><i class="fa-solid fa-people-group"></i>3자</p></button>
+                    <button class="mr40"><p><i class="fa-solid fa-phone"></i>보류</p></button>
+                    <button class="btn-cti mr40"><p><i class="fa-solid fa-link"></i>CTI ON</p></button>
+                </div>
+                <div class="a-box">
+                    <a class="mr10" href="#"><p><i class="fa-solid fa-circle-info"></i></p></a> 
+                    <a class="mr20" href="#"><p><i class="fa-solid fa-user"></i>출근</p></a> 
+                    <a class="mr30" href="#"><p><i class="fa-solid fa-user"></i>퇴근</p></a> 
+                    <a class="ml40" href="#"><p><i class="fa-solid fa-arrow-right-from-bracket"></i>로그아웃</p></a> 
+                </div>
+            </div>
+        </header>
+
+        <!-- 사이드바 -->
+        <aside>
+            <ul class="menu">
+                <li class="select-menu">
+                    <div class="icon-text">
+                        <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                        <div class="text"><p>상담</p></div>     
+                    </div>
+                </li>
+                <div class="float-end"></div>
+                <li class="">
+                    <div class="icon-text">
+                        <div class="icon"><i class="fa-regular fa-comments"></i></div>
+                        <div class="text"><p>지식톡톡</p></div>     
+                    </div>
+                </li>
+                <div class="float-end"></div>
+                <li class="">
+                    <div class="icon-text">
+                        <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div class="text"><p>상담관리</p></div>     
+                    </div>
+                </li>
+                <div class="float-end"></div>
+                <li class="">
+                    <div class="icon-text">
+                        <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                        <div class="text"><p>시스템관리</p></div>     
+                    </div>              
+                </li>
+                <div class="float-end"></div>
+                <li class="">
+                    <div class="icon-text">
+                        <div class="icon"><i class="fa-solid fa-chart-simple"></i></div>
+                        <div class="text"><p>통합통계</p></div>     
+                    </div>            
+                </li>
+                <div class="float-end"></div>
+                <li class="">
+                    <div class="icon-text">
+                        <div class="icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <div class="text"><p>서비스관리</p></div>     
+                    </div>                    
+                </li>
+                <div class="float-end"></div>
+                <li class="">
+                    <div class="icon-text">
+                        <div class="icon"><i class="fa-solid fa-pen-to-square"></i></div>
+                        <div class="text"><p>설문조사</p></div>     
+                    </div>                   
+                </li>
+                <div class="float-end"></div>
+            </ul> 
+        </aside>
+
+        <!-- 메인 -->
+        <main>
+            <div class="sch">
+                <select class="ml40 mr10">
+                    <option value="고용상담"><p>고용상담</p></option>
+                </select>
+                <input type="text" placeholder="ARS">
+                <input type="text" placeholder="인입대상">
+                <input type="text" placeholder="발신번호">
+                <input type="text" placeholder="고객번호">
+                <input type="text" class="mr30" placeholder="민원특성">
+                
+                <button class="ml30 mr20"><p><i class="fa-regular fa-circle-check"></i>본인인증</p></button>
+                <button class=""><p><i class="fa-solid fa-power-off"></i>특별민원 종료</p></button>
+            </div> 
+            <div class="ct1-tap-box">
+                <ul class="ct1-tap">
+                    <li class="select-tap"><p>공지사항</p></li>
+                    <li><p>상담지식</p></li>
+                    <li><p>지식SOS</p></li>
+                </ul> 
+            </div>
+            <div class="ct1">                
+                <div class="main-ct1">
+                    <ul class="ct1-nav">
+                        <li class="notice-nav">
+                            <a href="#" class="select-nav"><p>전체공지</p></a>
+                            <a href="#"><p>울산공지</p></a>
+                        </li>
+                        <li class="notice-search">
+                            <input type="text" class="search-input mr10">
+                            <button><p>검색</p></button>
+                        </li>
+                    </ul>                    
+                    <div class="ct1-list">
+                        <div class="notice-list">
+                            <table>
+                                <tr>
+                                    <td>전체</td>
+                                    <td>[고용센터 특이사항] 의왕고용센터 - 실업급여 신청 시 거주지</td>
+                                    <td>황혜정</td>
+                                    <td>2021-08-25</td>
+                                    <td>2839</td>
+                                </tr>
+                                <tr>
+                                    <td>전체</td>
+                                    <td>[고용센터 특이사항] 의왕고용센터 - 실업급여 신청 시 거주지</td>
+                                    <td>황혜정</td>
+                                    <td>2021-08-25</td>
+                                    <td>2839</td>
+                                </tr>
+                                <tr>
+                                    <td>전체</td>
+                                    <td>[고용센터 특이사항] 의왕고용센터 - 실업급여 신청 시 거주지</td>
+                                    <td>황혜정</td>
+                                    <td>2021-08-25</td>
+                                    <td>2839</td>
+                                </tr>                                
+                                <tr>
+                                    <td>전체</td>
+                                    <td>[고용센터 특이사항] 의왕고용센터 - 실업급여 신청 시 거주지</td>
+                                    <td>황혜정</td>
+                                    <td>2021-08-25</td>
+                                    <td>2839</td>
+                                </tr>                                
+                                <tr>
+                                    <td>전체</td>
+                                    <td>[고용센터 특이사항] 의왕고용센터 - 실업급여 신청 시 거주지</td>
+                                    <td>황혜정</td>
+                                    <td>2021-08-25</td>
+                                    <td>2839</td>
+                                </tr>                                
+                                <tr>
+                                    <td>전체</td>
+                                    <td>[고용센터 특이사항] 의왕고용센터 - 실업급여 신청 시 거주지</td>
+                                    <td>황혜정</td>
+                                    <td>2021-08-25</td>
+                                    <td>2839</td>
+                                </tr>                                
+                                <tr>
+                                    <td>전체</td>
+                                    <td>[고용센터 특이사항] 의왕고용센터 - 실업급여 신청 시 거주지</td>
+                                    <td>황혜정</td>
+                                    <td>2021-08-25</td>
+                                    <td>2839</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="notice-detail">
+                        </div>
+                        <div class="float-end"></div>
+                    </div>
+                </div>
+                <div class="ct1-sch">
+                    <button class="detail-btn">
+                        <p><i class="fa-solid fa-magnifying-glass mr10"></i>상세조회</p>
+                    </button>
+                </div>                
+            </div>            
+            <div class="ct2-tap-box">
+                <ul class="ct2-tap">
+                    <li class="select-tap"><p>전화상담</p></li>
+                    <li><p>SMS/이메일</p></li>
+                    <li><p>특별민원</p></li>
+                    <li><p>예약상담</p></li>
+                </ul> 
+            </div>
+            <div class="main-ct2">
+                <div class="consult-list">
+                    <table>
+                        <tr>
+                            <th>구분</th>
+                            <th>인입일시</th>
+                            <th>고용센터</th>
+                            <th>콜센터</th>
+                            <th>상담원</th>
+                            <th>종결유형</th>
+                            <th>상담분류</th>
+                        </tr>
+                        <tr>
+                            <td>구분</td>
+                            <td>인입일시</td>
+                            <td>고용센터</td>
+                            <td>콜센터</td>
+                            <td>상담원</td>
+                            <td>종결유형</td>
+                            <td>상담분류</td>
+                        </tr>
+                        <tr>
+                            <td>구분</td>
+                            <td>인입일시</td>
+                            <td>고용센터</td>
+                            <td>콜센터</td>
+                            <td>상담원</td>
+                            <td>종결유형</td>
+                            <td>상담분류</td>
+                        </tr>                        
+                        <tr>
+                            <td>구분</td>
+                            <td>인입일시</td>
+                            <td>고용센터</td>
+                            <td>콜센터</td>
+                            <td>상담원</td>
+                            <td>종결유형</td>
+                            <td>상담분류</td>
+                        </tr>                        
+                        <tr>
+                            <td>구분</td>
+                            <td>인입일시</td>
+                            <td>고용센터</td>
+                            <td>콜센터</td>
+                            <td>상담원</td>
+                            <td>종결유형</td>
+                            <td>상담분류</td>
+                        </tr>                        
+                        <tr>
+                            <td>구분</td>
+                            <td>인입일시</td>
+                            <td>고용센터</td>
+                            <td>콜센터</td>
+                            <td>상담원</td>
+                            <td>종결유형</td>
+                            <td>상담분류</td>
+                        </tr>                        
+                        <tr>
+                            <td>구분</td>
+                            <td>인입일시</td>
+                            <td>고용센터</td>
+                            <td>콜센터</td>
+                            <td>상담원</td>
+                            <td>종결유형</td>
+                            <td>상담분류</td>
+                        </tr>                        
+                        <tr>
+                            <td>구분</td>
+                            <td>인입일시</td>
+                            <td>고용센터</td>
+                            <td>콜센터</td>
+                            <td>상담원</td>
+                            <td>종결유형</td>
+                            <td>상담분류</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="consult-save">
+                    <div class="consult-category">
+                        <p>상담분류</p>
+                        <input type="text">
+                    </div>
+                    <div class="consult-title">
+                        <p>상담제목</p>
+                        <input type="text">
+                    </div>
+                    <div class="consult-content">
+                        <p>상담내용</p>
+                        <textarea></textarea>
+                    </div>
+                    <div class="radio-select">
+                        <input type="radio" id="일반상담" name="분류" value="일반상담">
+                        <label for="일반상담">일반상담</label>
+                        <input type="radio" id="CRM" name="분류" value="CRM">
+                        <label for="CRM">CRM</label>
+                        <input type="radio" id="기타" name="분류" value="기타">
+                        <label for="기타">기타</label>
+                        <input type="radio" id="VOC" name="분류" value="VOC">
+                        <label for="VOC" class="mr40">VOC</label>
+
+                        <select class="">
+                            <option value="1차완료"><p>1차완료</p></option>
+                        </select>
+                    </div>
+                    <div class="consult-btn-box">
+                        <button class="consult-save-btn"><p><i class="fa-regular fa-floppy-disk mr10"></i>상담저장</p></button>
+                        <button class="call-reservation-btn"><p><i class="fa-solid fa-headset mr10"></i>재통화예약</p></button>
+                    </div>
+                </div>
+                <div class="float-end"></div>
+            </div>
+        </main>
+
+        <!-- 풋터 -->
+        <footer>
+            <div class="footer-container">
+                <div class="left-box">
+                    <div class="user-box"><p><i class="fa-regular fa-user"></i>  상담원: 울산테스트</p></div>
+                </div>
+                <div class="monitoring-box">
+                    <div class="m1"><p>통화시간: 00:00:00</p></div>
+                    <div class="m2"><p>통화건수: 0</p></div>
+                    <div class="m3"><p>총통화시간: 00:00:00</p></div>
+                    <div class="m4"><p>최종통화시간: 00:00:00</p></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

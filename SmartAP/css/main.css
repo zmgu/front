@@ -1,0 +1,472 @@
+@charset "UTF-8";
+/* 색상 */
+/* 테두리 */
+/*============== method ==============*/
+/*============== 상단검색창 ==============*/
+.sch {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  max-width: 1630px;
+  background-color: #ffffff;
+  height: 60px;
+  border: 1px solid #DBDBDB;
+}
+.sch p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px;
+}
+.sch input, .sch select {
+  width: 140px;
+  height: 36px;
+  border: 1px solid #DBDBDB;
+  margin-top: 10px;
+  margin-right: 0.3%;
+  border-radius: 0.3rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+}
+.sch input::placeholder {
+  padding-left: 10%;
+  font-size: 1rem;
+}
+.sch button {
+  background-color: #2E79EB;
+  border: none;
+  border-radius: 0.3rem;
+  width: 190px;
+  margin-left: 3%;
+}
+.sch button p {
+  color: #ffffff;
+}
+.sch button:hover {
+  background-color: #ffffff;
+  border: 1px solid #2E79EB;
+}
+.sch button:hover p {
+  color: #2E79EB;
+}
+
+/*============== 상단탭 ==============*/
+.ct1-tap-box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  max-width: 1630px;
+  background-color: #2E79EB;
+  height: 40px;
+  width: 1628px;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+  border-bottom: none;
+  padding-top: 3px;
+}
+.ct1-tap-box li:hover {
+  background-color: #ffffff;
+}
+.ct1-tap-box li:hover p, .ct1-tap-box li:hover i {
+  color: #2E79EB;
+}
+
+.ct1-tap {
+  list-style-type: none;
+  width: 100%;
+  height: 37px;
+  padding: 0%;
+  margin: 3px 0px 0px 0px;
+}
+.ct1-tap li {
+  width: 33.3333333333%;
+  height: 37px;
+  float: left;
+  text-align: center;
+}
+.ct1-tap p {
+  display: inline-block;
+  color: #ffffff;
+  margin: 8px auto 0px auto;
+  padding: 0px auto;
+}
+
+.select-tap {
+  background-color: #ffffff;
+}
+.select-tap p, .select-tap i {
+  color: #2E79EB;
+}
+
+/*============== iframe ==============*/
+.ct1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  max-width: 1630px;
+  background-color: #EEEEEE;
+  height: 415px;
+}
+
+.main-ct1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  max-width: 1630px;
+  background-color: #EEEEEE;
+  height: 340px;
+}
+
+.ct1-nav {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  max-width: 1630px;
+  background-color: #ffffff;
+  height: 60px;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+  border-bottom: none;
+  padding-left: 2%;
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 0%;
+}
+.ct1-nav a {
+  border: none;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  width: 140px;
+  height: 45px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+.ct1-nav a:hover {
+  background-color: #E8F0FE;
+}
+.ct1-nav a:hover p, .ct1-nav a:hover i {
+  color: #2E79EB;
+}
+.ct1-nav p {
+  color: #515151;
+  margin-top: 7%;
+}
+.ct1-nav .select-nav {
+  background-color: #E8F0FE;
+}
+.ct1-nav .select-nav p, .ct1-nav .select-nav i {
+  color: #2E79EB;
+}
+
+.notice-nav {
+  display: flex;
+  width: 57%;
+}
+
+.notice-search {
+  width: 43%;
+  margin-top: 10px;
+  margin-left: 60%;
+  display: flex;
+}
+.notice-search button {
+  border: none;
+  background-color: #2E79EB;
+  border-radius: 0.3rem;
+  width: 70px;
+  height: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.notice-search button P {
+  margin: auto;
+  color: #ffffff;
+}
+.notice-search button:hover {
+  background-color: #ffffff;
+  border: 1px solid #2E79EB;
+}
+.notice-search button:hover P {
+  color: #2E79EB;
+}
+
+.search-input {
+  width: 140px;
+  height: 36px;
+  border: 1px solid #DBDBDB;
+  border-radius: 0.3rem;
+}
+
+.ct1-list {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  max-width: 1630px;
+  background-color: #ffffff;
+  height: 280px;
+  border: 1px solid #DBDBDB;
+}
+
+.notice-list {
+  float: left;
+  height: 100%;
+  width: 58%;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+/*============== table ==============*/
+table {
+  width: 98%;
+  height: 100%;
+  align-items: center;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #e9eef7;
+}
+
+td, th {
+  border-top: 1px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB;
+  padding-left: 14px;
+  text-align: center;
+}
+
+tr:first-child td {
+  border-top: none;
+}
+
+.notice-detail {
+  float: left;
+  height: 100%;
+  width: 42%;
+  background-color: #ffffff;
+}
+
+.ct1-sch {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  max-width: 1630px;
+  background-color: #ffffff;
+  height: 60px;
+  border: 1px solid #DBDBDB;
+}
+
+.detail-btn {
+  width: 120px;
+  height: 40px;
+  margin: 10px auto auto 90%;
+  background-color: #ffffff;
+  color: #2E79EB;
+  border: 1px solid #2E79EB;
+  border-radius: 0.3rem;
+}
+.detail-btn p {
+  margin: 6px auto 6px auto;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.detail-btn:hover {
+  border: none;
+  background-color: #2E79EB;
+}
+.detail-btn:hover p {
+  color: #ffffff;
+}
+
+/*============== 상담저장 ==============*/
+.ct2-tap-box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  max-width: 1630px;
+  background-color: #2E79EB;
+  height: 40px;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+  border-bottom: none;
+  padding-top: 3px;
+}
+.ct2-tap-box li:hover {
+  background-color: #ffffff;
+}
+.ct2-tap-box li:hover p, .ct2-tap-box li:hover i {
+  color: #2E79EB;
+}
+
+.ct2-tap {
+  list-style-type: none;
+  width: 100%;
+  height: 37px;
+  padding: 0%;
+  margin: 3px 0px 0px 0px;
+}
+.ct2-tap li {
+  width: 25%;
+  height: 37px;
+  float: left;
+  text-align: center;
+}
+.ct2-tap p {
+  display: inline-block;
+  color: #ffffff;
+  margin: 8px auto 0px auto;
+  padding: 0px auto;
+}
+
+.select-tap {
+  background-color: #ffffff;
+}
+.select-tap p, .select-tap i {
+  color: #2E79EB;
+}
+
+.main-ct2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  max-width: 1630px;
+  background-color: #ffffff;
+  height: 320px;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+}
+
+.consult-list {
+  float: left;
+  height: 100%;
+  width: 57%;
+  background-color: #ffffff;
+}
+
+.consult-save {
+  float: left;
+  height: 100%;
+  width: 43%;
+  background-color: #ffffff;
+}
+
+.consult-category {
+  display: flex;
+  border: 1px solid #DBDBDB;
+  border-right: none;
+  border-left: none;
+}
+.consult-category p {
+  width: 22%;
+  margin: 0%;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  background-color: #E9EEF7;
+}
+.consult-category input {
+  width: 74%;
+  height: 28px;
+  margin: 6px auto 6px auto;
+  border: 1px solid #DBDBDB;
+}
+
+.consult-title {
+  display: flex;
+  border: 1px solid #DBDBDB;
+  border-right: none;
+  border-left: none;
+}
+.consult-title p {
+  width: 22%;
+  margin: 0%;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  background-color: #E9EEF7;
+}
+.consult-title input {
+  width: 74%;
+  height: 28px;
+  margin: 6px auto 6px auto;
+  border: 1px solid #DBDBDB;
+}
+
+.consult-content {
+  display: flex;
+  border: 1px solid #DBDBDB;
+  border-right: none;
+  border-left: none;
+}
+.consult-content p {
+  width: 22%;
+  margin: 0%;
+  padding: 40px 25px;
+  box-sizing: border-box;
+  background-color: #E9EEF7;
+}
+.consult-content input {
+  width: 74%;
+  height: 28px;
+  margin: 6px auto 6px auto;
+  border: 1px solid #DBDBDB;
+}
+.consult-content textarea {
+  width: 74%;
+  height: 100px;
+  margin: 6px auto 6px auto;
+  border: 1px solid #DBDBDB;
+}
+
+.radio-select select {
+  width: 140px;
+  height: 36px;
+  border: 1px solid #DBDBDB;
+  margin: 8px 0% 1% 34%;
+  padding-left: 2%;
+  border-radius: 0.3rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  color: #B3B3B3;
+}
+
+.consult-btn-box button {
+  width: 48%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+}
+.consult-btn-box p {
+  font-size: 18px;
+  margin: 10px auto 10px auto;
+}
+
+.consult-save-btn {
+  margin-left: 1%;
+  margin-right: 1%;
+  border: 1px solid #DBDBDB;
+  background-color: #2E79EB;
+  color: #ffffff;
+}
+
+.consult-save-btn:hover {
+  background-color: #ffffff;
+  border: 1px solid #4686E8;
+}
+.consult-save-btn:hover p, .consult-save-btn:hover i {
+  color: #2E79EB;
+}
+
+.call-reservation-btn {
+  border: 1px solid #4686E8;
+  background-color: #ffffff;
+  color: #2E79EB;
+}
+
+.call-reservation-btn:hover {
+  background-color: #2E79EB;
+}
+.call-reservation-btn:hover p, .call-reservation-btn:hover i {
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */

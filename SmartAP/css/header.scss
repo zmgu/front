@@ -1,0 +1,74 @@
+@mixin btn($width, $background-color) {
+    background-color: $background-color;
+    width: $width;
+    margin-top: 15px;
+    height: 40px;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+@mixin header-layout($width) {
+    width: $width;
+    height: 100%;
+}
+
+.header-container {
+    @include header-layout(100%);
+    display: flex;
+
+    p {
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #7D8CB9;
+        font-weight: bold;
+        font-size: 17px;
+        margin: 0%;
+    }
+
+    i {
+        margin-right: 15px;
+    }
+}
+
+.logo-box {
+    margin-right: 5%;
+
+    @include header-layout(11%);
+    img {
+        height: 90%;
+    }
+}
+
+.btn-box {
+    @include header-layout(60%);
+
+    .btn-cti {
+        @include btn(143px, #74A130);
+        p {
+            color: #ffffff;
+        }
+    }
+    
+    button {
+        @include btn(117px, #4D6DB3);
+    }
+}
+
+.a-box {
+    @include header-layout(25%);
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    padding-right: 3%;
+
+    i {
+        font-size: 30px;
+        color: #ffffff;
+        margin-right: 8px;
+    }
+
+    p {
+        font-size: 20px;
+        color: #ffffff;
+    }
+}
+

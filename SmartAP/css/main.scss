@@ -1,0 +1,403 @@
+/* 색상 */
+$commonBorder: 1px solid #DBDBDB; /* 테두리 */
+ $blue: #2E79EB;
+$white: #ffffff;
+ $gray: #EEEEEE;
+
+/*============== method ==============*/
+@mixin main-layout($height, $margin-top, $background-color) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $margin-top;
+    max-width: 1630px;
+    background-color: $background-color;
+    height: $height;
+}
+
+@mixin content-layout($height, $width, $background-color) {
+    float: left;
+    height: $height;
+    width: $width;
+    background-color: $background-color;
+}
+
+@mixin consult-save-layout($padding-top) {
+    display: flex;
+    border: $commonBorder;
+    border-right: none;
+    border-left: none;
+
+    p {
+        width: 22%;
+        margin: 0%;
+        padding: $padding-top 25px;
+        box-sizing: border-box;
+        background-color: #E9EEF7;
+    }
+
+    input {
+        width: 74%;
+        height: 28px;
+        margin: 6px auto 6px auto;
+        border: $commonBorder;
+    }
+}
+
+@mixin tap($width) {
+    list-style-type: none;
+    width: 100%;
+    height: 37px;
+    padding: 0%;
+    margin: 3px 0px 0px 0px;
+
+    li {
+        width: $width;
+        height: 37px;
+        float: left;
+        text-align: center;
+    }
+
+    p {
+        display: inline-block;
+        color: $white;
+        margin: 8px auto 0px auto;
+        padding: 0px auto;
+    }
+}
+
+@mixin selectAndHover($background-color, $color) {
+    background-color: $background-color;
+    p, i {
+        color: $color;
+    }
+}
+
+/*============== 상단검색창 ==============*/
+.sch {
+    @include main-layout(60px, 15px, $white);
+    border: $commonBorder;
+
+    p {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    input, select {
+        width: 140px;
+        height: 36px;
+        border: $commonBorder;
+        margin-top: 10px;
+        margin-right: 0.3%;
+        border-radius: 0.3rem;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+    }   
+
+    input::placeholder {
+        padding-left: 10%;
+        font-size: 1rem;
+    }
+
+    button {
+        background-color: $blue;
+        border: none;
+        border-radius: 0.3rem;
+        width: 190px;
+        margin-left: 3%;
+        p {
+            color: $white;
+        }
+    }
+    button:hover {
+        background-color: $white;
+        border: 1px solid $blue;
+        p {
+            color: $blue;
+        }
+
+    }
+}
+
+
+/*============== 상단탭 ==============*/
+.ct1-tap-box {
+    @include main-layout(40px, 15px, $blue);
+    width: 1628px;
+    border: $commonBorder;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 3px;
+
+    li:hover {
+        @include selectAndHover($white, $blue);
+    }
+}
+
+.ct1-tap {
+    @include tap(33.3333333333333333333333333333333333%);
+}
+
+.select-tap {
+    @include selectAndHover($white, $blue);
+}
+
+
+/*============== iframe ==============*/
+.ct1 {
+    @include main-layout(415px, 0px, $gray);
+}
+
+.main-ct1 {
+    @include main-layout(340px, 0px, $gray);
+}
+
+.ct1-nav {
+    @include main-layout(60px, 0px, $white);
+    border: $commonBorder;
+    border-top: none;
+    border-bottom: none; 
+    padding-left: 2%;
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0%;
+    
+    a {
+        border: none;
+        background-color: $white;        
+        border-radius: 0.3rem;
+        width: 140px;
+        height: 45px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    a:hover {
+        @include selectAndHover(#E8F0FE, $blue);
+    }
+
+    p {
+        color: #515151;
+        margin-top: 7%;
+    }
+
+    .select-nav {
+        @include selectAndHover(#E8F0FE, $blue);
+    }
+}
+.notice-nav {
+    display: flex;
+    width: 57%;
+
+}
+
+.notice-search {
+    width: 43%;
+    margin-top: 10px;
+    margin-left: 60%;
+    display: flex;
+
+    button {
+        border: none;
+        background-color: $blue;        
+        border-radius: 0.3rem;
+        width: 70px;
+        height: 40px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        P {
+            margin: auto;
+            color: $white;
+        }
+    }
+
+    button:hover {
+        background-color: $white;
+        border: 1px solid $blue;        
+        P {
+            color: $blue;
+        }
+    }
+}
+.search-input {
+    width: 140px;
+    height: 36px;
+    border: $commonBorder;
+    border-radius: 0.3rem;
+
+}
+
+.ct1-list {
+    @include main-layout(280px, 0px, $white);
+    border: $commonBorder;
+}
+
+.notice-list {
+    @include content-layout(100%, 58%, $white);
+    align-items: center;
+}
+
+
+/*============== table ==============*/
+table {
+    width: 98%;
+    height: 100%;
+    align-items: center;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #e9eef7;
+}
+
+td, th {
+    border-top: $commonBorder;
+    border-bottom: $commonBorder;
+    padding-left: 14px;
+    text-align: center;
+}
+
+tr:first-child td {
+    border-top: none;
+}
+
+.notice-detail {
+    @include content-layout(100%, 42%, $white);
+}
+
+.ct1-sch {
+    @include main-layout(60px, 15px, $white);
+    border: $commonBorder;
+}
+
+.detail-btn {
+    width: 120px;
+    height: 40px;
+    margin: 10px auto auto 90%;
+    background-color: $white;
+    color: $blue;
+    border: 1px solid $blue;
+    border-radius: 0.3rem;
+    p {
+        margin: 6px auto 6px auto ;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold; 
+        font-size: 16px;
+    }
+}
+.detail-btn:hover {
+    border: none;
+    background-color: $blue;
+    p {
+        color: $white;
+    }
+}
+
+/*============== 상담저장 ==============*/
+.ct2-tap-box { 
+    @include main-layout(40px, 15px, $blue);
+    border: $commonBorder;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 3px;
+
+    li:hover {
+        @include selectAndHover($white, $blue);
+    }
+}
+
+.ct2-tap { 
+    @include tap(25%);
+}
+
+.select-tap { 
+    @include selectAndHover($white, $blue);
+}
+
+.main-ct2 {
+    @include main-layout(320px, 0px, $white);
+    border: $commonBorder;
+    border-top: none;
+}
+
+.consult-list {
+    @include content-layout(100%, 57%, $white);
+}
+
+.consult-save {
+    @include content-layout(100%, 43%, $white);
+}
+
+.consult-category {
+    @include consult-save-layout(10px);
+}
+.consult-title {
+    @include consult-save-layout(10px);
+}
+
+.consult-content {
+    @include consult-save-layout(40px);
+
+    textarea {
+        width: 74%;
+        height: 100px;
+        margin: 6px auto 6px auto;
+        border: $commonBorder;
+    }
+}
+
+.radio-select {
+    select {
+        width: 140px;
+        height: 36px;
+        border: $commonBorder;
+        margin: 8px 0% 1% 34%;
+        padding-left: 2%;
+        border-radius: 0.3rem;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+        color: #B3B3B3;
+    }   
+}
+
+.consult-btn-box {
+    button {
+        width: 48%;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;    
+    }
+    p {
+        font-size: 18px;
+        margin: 10px auto 10px auto;
+    }
+}
+
+.consult-save-btn {
+    margin-left: 1%;
+    margin-right: 1%;
+    border: $commonBorder;
+    background-color: $blue;
+
+    color: $white;
+}
+
+.consult-save-btn:hover {
+    @include selectAndHover($white, $blue);
+    border: 1px solid #4686E8;
+}
+
+.call-reservation-btn {
+    
+    border: 1px solid #4686E8;
+    background-color: $white;
+    color: $blue;
+
+}
+
+.call-reservation-btn:hover {
+    @include selectAndHover($blue, $white);
+}

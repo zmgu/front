@@ -1,0 +1,53 @@
+@import 'main';
+@import 'aside';
+@import 'header';
+@import 'footer';
+@import 'helper.css';
+
+/* 바디 */
+body {
+    margin: 0%;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #5C5C5C;
+    font-weight: bold;
+}
+
+
+
+.container {
+    /* 그리드 레이아웃 */
+    display: grid;
+    grid-template-rows: 70px 1fr 70px; /*header & footer 70px, 나머지*/
+    grid-template-columns: 200px 1fr; /*사이드바 200px, 나머지*/
+
+    grid-template-areas: 
+    "header header header" 
+    "aside   main   main " 
+    "footer footer footer";
+
+    height: 100vh;
+    min-width: 1400px;  
+    min-height: 400px;
+
+}
+
+/*============== common ==============*/
+@mixin layout($grid-area, $background-color) {
+    grid-area: $grid-area;
+    background-color: $background-color;
+}
+
+.float-end {clear: both;}
+a {text-decoration: none;}
+
+/*============== header ==============*/
+header {@include layout(header, #3354BB);}
+
+/*============== main ==============*/
+main {@include layout(main, #EEEEEE);}
+
+/*============== aside ==============*/
+aside {@include layout(aside, #ffffff);}
+
+/*============== footer ==============*/
+footer {@include layout(footer, #1F2024);}

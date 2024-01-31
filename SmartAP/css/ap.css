@@ -1,0 +1,711 @@
+@charset "UTF-8";
+/* 색상 */
+/* 테두리 */
+/*============== method ==============*/
+/*============== 상단검색창 ==============*/
+@import 'helper.css';
+.sch {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  max-width: 1630px;
+  background-color: #ffffff;
+  height: 60px;
+  border: 1px solid #DBDBDB;
+}
+.sch p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px;
+}
+.sch input, .sch select {
+  width: 140px;
+  height: 36px;
+  border: 1px solid #DBDBDB;
+  margin-top: 10px;
+  margin-right: 0.3%;
+  border-radius: 0.3rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+}
+.sch input::placeholder {
+  padding-left: 10%;
+  font-size: 1rem;
+}
+.sch button {
+  background-color: #2E79EB;
+  border: none;
+  border-radius: 0.3rem;
+  width: 190px;
+  margin-left: 3%;
+}
+.sch button p {
+  color: #ffffff;
+}
+.sch button:hover {
+  background-color: #ffffff;
+  border: 1px solid #2E79EB;
+}
+.sch button:hover p {
+  color: #2E79EB;
+}
+
+/*============== 상단탭 ==============*/
+.ct1-tap-box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  max-width: 1630px;
+  background-color: #2E79EB;
+  height: 40px;
+  width: 1628px;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+  border-bottom: none;
+  padding-top: 3px;
+}
+.ct1-tap-box li:hover {
+  background-color: #ffffff;
+}
+.ct1-tap-box li:hover p, .ct1-tap-box li:hover i {
+  color: #2E79EB;
+}
+
+.ct1-tap {
+  list-style-type: none;
+  width: 100%;
+  height: 37px;
+  padding: 0%;
+  margin: 3px 0px 0px 0px;
+}
+.ct1-tap li {
+  width: 33.3333333333%;
+  height: 37px;
+  float: left;
+  text-align: center;
+}
+.ct1-tap p {
+  display: inline-block;
+  color: #ffffff;
+  margin: 8px auto 0px auto;
+  padding: 0px auto;
+}
+
+.select-tap {
+  background-color: #ffffff;
+}
+.select-tap p, .select-tap i {
+  color: #2E79EB;
+}
+
+/*============== iframe ==============*/
+.ct1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  max-width: 1630px;
+  background-color: #EEEEEE;
+  height: 415px;
+}
+
+.main-ct1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  max-width: 1630px;
+  background-color: #EEEEEE;
+  height: 340px;
+}
+
+.ct1-nav {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  max-width: 1630px;
+  background-color: #ffffff;
+  height: 60px;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+  border-bottom: none;
+  padding-left: 2%;
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 0%;
+}
+.ct1-nav a {
+  border: none;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  width: 140px;
+  height: 45px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+.ct1-nav a:hover {
+  background-color: #E8F0FE;
+}
+.ct1-nav a:hover p, .ct1-nav a:hover i {
+  color: #2E79EB;
+}
+.ct1-nav p {
+  color: #515151;
+  margin-top: 7%;
+}
+.ct1-nav .select-nav {
+  background-color: #E8F0FE;
+}
+.ct1-nav .select-nav p, .ct1-nav .select-nav i {
+  color: #2E79EB;
+}
+
+.notice-nav {
+  display: flex;
+  width: 57%;
+}
+
+.notice-search {
+  width: 43%;
+  margin-top: 10px;
+  margin-left: 60%;
+  display: flex;
+}
+.notice-search button {
+  border: none;
+  background-color: #2E79EB;
+  border-radius: 0.3rem;
+  width: 70px;
+  height: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.notice-search button P {
+  margin: auto;
+  color: #ffffff;
+}
+.notice-search button:hover {
+  background-color: #ffffff;
+  border: 1px solid #2E79EB;
+}
+.notice-search button:hover P {
+  color: #2E79EB;
+}
+
+.search-input {
+  width: 140px;
+  height: 36px;
+  border: 1px solid #DBDBDB;
+  border-radius: 0.3rem;
+}
+
+.ct1-list {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  max-width: 1630px;
+  background-color: #ffffff;
+  height: 280px;
+  border: 1px solid #DBDBDB;
+}
+
+.notice-list {
+  float: left;
+  height: 100%;
+  width: 58%;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+/*============== table ==============*/
+table {
+  width: 98%;
+  height: 100%;
+  align-items: center;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #e9eef7;
+}
+
+td, th {
+  border-top: 1px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB;
+  padding-left: 14px;
+  text-align: center;
+}
+
+tr:first-child td {
+  border-top: none;
+}
+
+.notice-detail {
+  float: left;
+  height: 100%;
+  width: 42%;
+  background-color: #ffffff;
+}
+
+.ct1-sch {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  max-width: 1630px;
+  background-color: #ffffff;
+  height: 60px;
+  border: 1px solid #DBDBDB;
+}
+
+.detail-btn {
+  width: 120px;
+  height: 40px;
+  margin: 10px auto auto 90%;
+  background-color: #ffffff;
+  color: #2E79EB;
+  border: 1px solid #2E79EB;
+  border-radius: 0.3rem;
+}
+.detail-btn p {
+  margin: 6px auto 6px auto;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.detail-btn:hover {
+  border: none;
+  background-color: #2E79EB;
+}
+.detail-btn:hover p {
+  color: #ffffff;
+}
+
+/*============== 상담저장 ==============*/
+.ct2-tap-box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  max-width: 1630px;
+  background-color: #2E79EB;
+  height: 40px;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+  border-bottom: none;
+  padding-top: 3px;
+}
+.ct2-tap-box li:hover {
+  background-color: #ffffff;
+}
+.ct2-tap-box li:hover p, .ct2-tap-box li:hover i {
+  color: #2E79EB;
+}
+
+.ct2-tap {
+  list-style-type: none;
+  width: 100%;
+  height: 37px;
+  padding: 0%;
+  margin: 3px 0px 0px 0px;
+}
+.ct2-tap li {
+  width: 25%;
+  height: 37px;
+  float: left;
+  text-align: center;
+}
+.ct2-tap p {
+  display: inline-block;
+  color: #ffffff;
+  margin: 8px auto 0px auto;
+  padding: 0px auto;
+}
+
+.select-tap {
+  background-color: #ffffff;
+}
+.select-tap p, .select-tap i {
+  color: #2E79EB;
+}
+
+.main-ct2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  max-width: 1630px;
+  background-color: #ffffff;
+  height: 320px;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+}
+
+.consult-list {
+  float: left;
+  height: 100%;
+  width: 57%;
+  background-color: #ffffff;
+}
+
+.consult-save {
+  float: left;
+  height: 100%;
+  width: 43%;
+  background-color: #ffffff;
+}
+
+.consult-category {
+  display: flex;
+  border: 1px solid #DBDBDB;
+  border-right: none;
+  border-left: none;
+}
+.consult-category p {
+  width: 22%;
+  margin: 0%;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  background-color: #E9EEF7;
+}
+.consult-category input {
+  width: 74%;
+  height: 28px;
+  margin: 6px auto 6px auto;
+  border: 1px solid #DBDBDB;
+}
+
+.consult-title {
+  display: flex;
+  border: 1px solid #DBDBDB;
+  border-right: none;
+  border-left: none;
+}
+.consult-title p {
+  width: 22%;
+  margin: 0%;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  background-color: #E9EEF7;
+}
+.consult-title input {
+  width: 74%;
+  height: 28px;
+  margin: 6px auto 6px auto;
+  border: 1px solid #DBDBDB;
+}
+
+.consult-content {
+  display: flex;
+  border: 1px solid #DBDBDB;
+  border-right: none;
+  border-left: none;
+}
+.consult-content p {
+  width: 22%;
+  margin: 0%;
+  padding: 40px 25px;
+  box-sizing: border-box;
+  background-color: #E9EEF7;
+}
+.consult-content input {
+  width: 74%;
+  height: 28px;
+  margin: 6px auto 6px auto;
+  border: 1px solid #DBDBDB;
+}
+.consult-content textarea {
+  width: 74%;
+  height: 100px;
+  margin: 6px auto 6px auto;
+  border: 1px solid #DBDBDB;
+}
+
+.radio-select select {
+  width: 140px;
+  height: 36px;
+  border: 1px solid #DBDBDB;
+  margin: 8px 0% 1% 34%;
+  padding-left: 2%;
+  border-radius: 0.3rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  color: #B3B3B3;
+}
+
+.consult-btn-box button {
+  width: 48%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+}
+.consult-btn-box p {
+  font-size: 18px;
+  margin: 10px auto 10px auto;
+}
+
+.consult-save-btn {
+  margin-left: 1%;
+  margin-right: 1%;
+  border: 1px solid #DBDBDB;
+  background-color: #2E79EB;
+  color: #ffffff;
+}
+
+.consult-save-btn:hover {
+  background-color: #ffffff;
+  border: 1px solid #4686E8;
+}
+.consult-save-btn:hover p, .consult-save-btn:hover i {
+  color: #2E79EB;
+}
+
+.call-reservation-btn {
+  border: 1px solid #4686E8;
+  background-color: #ffffff;
+  color: #2E79EB;
+}
+
+.call-reservation-btn:hover {
+  background-color: #2E79EB;
+}
+.call-reservation-btn:hover p, .call-reservation-btn:hover i {
+  color: #ffffff;
+}
+
+/* 테두리 변수선언 */
+aside {
+  border-right: 1px solid #DBDBDB;
+}
+aside p {
+  font-size: 18px;
+  margin: 0%;
+}
+
+.menu {
+  width: 100%;
+  padding: 0%;
+  margin-top: 20px;
+}
+.menu li {
+  height: 45px;
+  width: 100%;
+  padding-top: 8px;
+  list-style-type: none;
+  box-sizing: border-box;
+  position: relative;
+}
+.menu li:hover {
+  background-color: #E8F0FE;
+}
+.menu li:hover p, .menu li:hover i {
+  color: #256ED5;
+}
+
+.icon-text .text {
+  float: left;
+}
+.icon-text .icon {
+  float: left;
+  padding-top: 2px;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+.icon-text .icon i {
+  font-size: 125%;
+  width: 29px;
+  height: 24px;
+}
+
+.select-menu {
+  background-color: #E8F0FE;
+}
+.select-menu p, .select-menu i {
+  color: #256ED5;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.header-container p {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #7D8CB9;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 0%;
+}
+.header-container i {
+  margin-right: 15px;
+}
+
+.logo-box {
+  margin-right: 5%;
+  width: 11%;
+  height: 100%;
+}
+.logo-box img {
+  height: 90%;
+}
+
+.btn-box {
+  width: 60%;
+  height: 100%;
+}
+.btn-box .btn-cti {
+  background-color: #74A130;
+  width: 143px;
+  margin-top: 15px;
+  height: 40px;
+  border-radius: 1.5rem;
+  border: none;
+}
+.btn-box .btn-cti p {
+  color: #ffffff;
+}
+.btn-box button {
+  background-color: #4D6DB3;
+  width: 117px;
+  margin-top: 15px;
+  height: 40px;
+  border-radius: 1.5rem;
+  border: none;
+}
+
+.a-box {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 3%;
+}
+.a-box i {
+  font-size: 30px;
+  color: #ffffff;
+  margin-right: 8px;
+}
+.a-box p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.footer-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.left-box {
+  width: 15%;
+  height: 100%;
+}
+.left-box .user-box {
+  height: 50px;
+  border-radius: 1.2rem;
+  width: 80%;
+  margin-top: 20px;
+  background-color: #1F2024;
+  margin-left: 20%;
+}
+
+.monitoring-box {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.monitoring-box div {
+  margin-left: 1%;
+}
+.monitoring-box p {
+  margin: 0%;
+  margin-top: 9px;
+  text-align: center;
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.m1 {
+  height: 50px;
+  border-radius: 1.2rem;
+  width: 14%;
+  margin-top: 10px;
+  background-color: #36373A;
+}
+
+.m2 {
+  height: 50px;
+  border-radius: 1.2rem;
+  width: 10%;
+  margin-top: 10px;
+  background-color: #36373A;
+}
+
+.m3 {
+  height: 50px;
+  border-radius: 1.2rem;
+  width: 15%;
+  margin-top: 10px;
+  background-color: #36373A;
+}
+
+.m4 {
+  height: 50px;
+  border-radius: 1.2rem;
+  width: 16%;
+  margin-top: 10px;
+  background-color: #36373A;
+}
+
+/* 바디 */
+body {
+  margin: 0%;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #5C5C5C;
+  font-weight: bold;
+}
+
+.container {
+  /* 그리드 레이아웃 */
+  display: grid;
+  grid-template-rows: 70px 1fr 70px; /*header & footer 70px, 나머지*/
+  grid-template-columns: 200px 1fr; /*사이드바 200px, 나머지*/
+  grid-template-areas: "header header header" "aside   main   main " "footer footer footer";
+  height: 100vh;
+  min-width: 1400px;
+  min-height: 400px;
+}
+
+/*============== common ==============*/
+.float-end {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*============== header ==============*/
+header {
+  grid-area: header;
+  background-color: #3354BB;
+}
+
+/*============== main ==============*/
+main {
+  grid-area: main;
+  background-color: #EEEEEE;
+}
+
+/*============== aside ==============*/
+aside {
+  grid-area: aside;
+  background-color: #ffffff;
+}
+
+/*============== footer ==============*/
+footer {
+  grid-area: footer;
+  background-color: #1F2024;
+}/*# sourceMappingURL=ap.css.map */

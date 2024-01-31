@@ -1,0 +1,62 @@
+@mixin footer-layout($width) {
+    width: $width;
+    height: 100%;
+}
+
+@mixin box-border($width, $argin-top, $background-color) {
+
+    height: 50px;
+    border-radius: 1.2rem;
+    width: $width;
+    margin-top: $argin-top;
+    background-color: $background-color;
+
+} 
+
+.footer-container {
+    @include footer-layout(100%);
+    display: flex;
+}
+
+.left-box {
+    @include footer-layout(15%);
+
+    .user-box {
+        @include box-border(80%, 20px, #1F2024);
+        margin-left: 20%;
+    }
+}
+
+.monitoring-box {
+    @include footer-layout(85%);
+    display: flex;
+    justify-content: center;
+    
+    div {
+        margin-left: 1%;
+    }
+    p {
+        margin: 0%;
+        margin-top: 9px;
+        
+        text-align: center;
+        font-size: 21px;
+        color: #ffffff;
+    }
+}
+
+.m1 {
+    @include box-border(14%,10px, #36373A);
+}
+
+.m2 {
+    @include box-border(10%, 10px, #36373A);
+}
+
+.m3 {
+    @include box-border(15%, 10px, #36373A);
+}
+
+.m4 {
+    @include box-border(16%,10px, #36373A);
+}
