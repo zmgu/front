@@ -30,10 +30,19 @@ a:hover, a:focus, a:active {
 }
 
 .google {
-  background-image: url("img/google_logo.svg");
+  background-image: url("img/google_icon.svg");
   background-repeat: no-repeat;
   background-size: 22px 22px;
   background-position: center;
   border: 1px solid #a1a1a1;
   border-radius: 100%;
-}/*# sourceMappingURL=css.css.map */
+}
+
+.kakao {
+  background-image: url("img/kakao_icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px 36px;
+  background-color: #FEE500;
+  border-radius: 100%;
+}
