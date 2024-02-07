@@ -1,0 +1,186 @@
+@mixin login-layout($height, $margin-bottom) {
+    width: 100%;
+    height: $height;
+    margin-bottom: $margin-bottom;
+}
+
+$연한회색: rgb(220, 220, 220);
+
+body {
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.login-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height:470px;
+    width: 320px;
+    padding: 16px 18px; 
+    border: $연한회색 solid 1px;
+    border-radius: 1rem;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.login-logo {
+    @include login-layout(100px, 20px);
+    background-color: #881111;
+}
+
+.login-form {
+    @include login-layout(160px, 20px);
+}
+
+.input-box {
+    display: flex;
+    width: 100%;
+    height: 44px;
+    border: 1px solid $연한회색;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+i {
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-top: 14px;
+    margin-left: 10px;
+    color:$연한회색;
+}
+
+input {
+    width: 260px;
+    height: 30px;
+    border: none;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-top: 9px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    font-size: 14px;
+    color: #4b4b4b;
+}
+
+::placeholder {
+    color: $연한회색;
+}
+
+.submitBtn {
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+
+    p {
+        margin: 0;
+        color: #E6A4B4;
+        font-size: 16px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+}
+
+.a-box {
+    @include login-layout(20px, 40px);
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    
+    a {
+        margin-top: 4px;
+        text-decoration: none;
+        color: #6d6d6d;
+    }
+    hr {
+        height: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+
+.loginBtn {
+    @include login-layout(100px, 20px);
+
+    a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        transition: 0.3s;
+    }
+
+    a:hover, a:focus, a:active {
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+
+}
+
+.sso-p {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: #929292;
+    font-size: 12px;
+    margin: 8px 0px;
+}
+
+.sso-p::before,
+.sso-p::after {
+    content: "";
+    flex-grow: 1;
+    background: rgb(210, 210, 210);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
+}
+
+.login-logo-ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.login-logo-li {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@mixin logo($image, $size) {
+    background-image: url($image);
+    background-size: $size;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.naver {
+    @include logo('img/naver_icon.png', contain);
+}
+
+.google {
+    @include logo('img/google_icon.svg', 22px 22px);
+    border: 1px solid #a1a1a1;
+    border-radius: 100%;
+}
+
+.kakao {
+    @include logo('img/kakao_icon.png', 36px 36px);
+    background-color: #FEE500;
+    border-radius: 100%;
+}
