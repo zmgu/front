@@ -16,18 +16,21 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    height:470px;
+    height:570px;
     width: 320px;
-    padding: 16px 18px; 
+    padding: 30px 20px; 
     border: $연한회색 solid 1px;
-    border-radius: 1rem;
+    border-radius: 1rem; 
     background-color: white;
     box-sizing: border-box;
 }
 
 .login-logo {
     @include login-layout(100px, 20px);
-    background-color: #881111;
+    background-image: url('img/cat2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .login-form {
@@ -98,6 +101,7 @@ input:focus {
         text-decoration: none;
         color: #6d6d6d;
     }
+    
     hr {
         height: 14px;
         margin-left: 10px;

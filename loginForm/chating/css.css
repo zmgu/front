@@ -8,9 +8,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  height: 470px;
+  height: 570px;
   width: 320px;
-  padding: 16px 18px;
+  padding: 30px 20px;
   border: rgb(220, 220, 220) solid 1px;
   border-radius: 1rem;
   background-color: white;
@@ -21,7 +21,10 @@ body {
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
-  background-color: #881111;
+  background-image: url("img/cat2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .login-form {
