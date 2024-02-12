@@ -40,6 +40,16 @@ body {
   border: 1px solid rgb(220, 220, 220);
   border-radius: 4px;
   margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.input-box:hover,
+.input-box:focus-within {
+  border: 1px solid #aaaaaa;
+}
+.input-box:hover .input-box-icon i,
+.input-box:focus-within .input-box-icon i {
+  color: #aaaaaa;
 }
 
 i {
@@ -66,10 +76,6 @@ input:focus {
   color: #4b4b4b;
 }
 
-::-moz-placeholder {
-  color: rgb(220, 220, 220);
-}
-
 ::placeholder {
   color: rgb(220, 220, 220);
 }
@@ -86,6 +92,11 @@ input:focus {
   color: #E6A4B4;
   font-size: 16px;
   font-family: "Noto Sans KR", sans-serif;
+}
+
+.submitBtn:hover {
+  background-color: #dfdfdf;
+  transition: 0.2s;
 }
 
 .a-box {
@@ -184,4 +195,4 @@ input:focus {
   background-position: center;
   background-color: #FEE500;
   border-radius: 100%;
-}/*# sourceMappingURL=css.css.map */
+}

@@ -44,6 +44,18 @@ body {
     border: 1px solid $연한회색;
     border-radius: 4px;
     margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.input-box:hover,
+.input-box:focus-within {
+    border: 1px solid #aaaaaa;
+
+    .input-box-icon {
+        i {
+            color: #aaaaaa;
+        }
+    }
 }
 
 i {
@@ -88,6 +100,11 @@ input:focus {
         font-family: 'Noto Sans KR', sans-serif;
     }
 
+}
+
+.submitBtn:hover {
+    background-color: #dfdfdf;
+    transition: 0.2s;
 }
 
 .a-box {
